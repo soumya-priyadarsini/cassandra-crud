@@ -5,7 +5,7 @@ exports.loginController = async(req,res) =>{
 
     try {
         const result = await loginService(req)
-        console.log('LoginController success response:-',result.message)
+        console.log('LoginController success response from frontend:-',result.message)
         res.status(200).json({
             status:0,
             message:result.message
