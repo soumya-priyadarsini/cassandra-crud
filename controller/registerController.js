@@ -4,7 +4,7 @@ exports.registerController = async(req,res) =>{
     console.log(`registerController request body from postman:--`,JSON.stringify(req.body))
     try {
         const result = await registerService(req.body);
-        console.log('registerController response:-',result.message)
+        console.log('registerController response from frotend:-',result.message)
         res.status(200).json({
             status:0,
             message:result.message,
